@@ -1,23 +1,32 @@
 #include <iostream>
-#include <string>
+#include <cmath>
 using namespace std;
-
-struct Book
-{
-	int Key;
-	string Name;
-};
-
-Book Sign ( Book a )
-{
-	a.Key ++;
-	return a;
-}
-
 int main ( )
 {
-	Book g;
-	g.Key = 1;
-	g.Name = "sd";
-	cout << g.Key << endl << g.Name;
+	double a , b , c;
+	cin >> a;
+	cin >> b;
+	cin >> c;
+
+	double D = b*b - 4 * a*c;
+
+	if ( D < 0 )
+	{
+		cout << "нч╫Б" << endl;
+		//return 0;
+	}
+	if ( D == 0 )
+	{
+		cout << -b / ( 2 * a ) << endl;
+		//return 0;
+	}
+	if ( D > 0 )
+	{
+		cout << ( -b + sqrt ( b*b - 4 * a*c ) / 2 * a );
+		cout << ( -b - sqrt ( b*b - 4 * a*c ) / 2 * a );
+		//return 0;
+	}
+	getchar ( );
+	getchar ( ); getchar ( );
+
 }
