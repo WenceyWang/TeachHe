@@ -7,26 +7,21 @@ int main ( )
 	cin >> a;
 	cin >> b;
 	cin >> c;
-
 	double D = b*b - 4 * a*c;
-
-	if ( D < 0 )
+	if ( D<0 )
 	{
 		cout << "нч╫Б" << endl;
-		//return 0;
+
 	}
 	if ( D == 0 )
 	{
-		cout << -b / ( 2 * a ) << endl;
-		//return 0;
+		cout << -b / 2 * a << endl;
+
 	}
 	if ( D > 0 )
 	{
-		cout << ( -b + sqrt ( b*b - 4 * a*c ) / 2 * a );
-		cout << ( -b - sqrt ( b*b - 4 * a*c ) / 2 * a );
-		//return 0;
+		cout << -b + sqrt ( b*b - 4 * a*c ) / 2 * a;
+		cout << -b - sqrt ( b*b - 4 * a*c ) / 2 * a;
 	}
-	getchar ( );
-	getchar ( ); getchar ( );
-
+	
 }
